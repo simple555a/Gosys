@@ -1,0 +1,56 @@
+﻿Build started 2015/11/19 16:06:03.
+     1>Project "E:\NicBuilder2.0\NicBuilder\trunk\source\src\libhisdATL\libhisdATL.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\libhisdATL.unsuccessfulbuild".
+       Midl:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\midl.exe /W1 /nologo /char signed /env win32 /h "libhisdATL_h.h" /tlb "Release\libhisdATL.tlb" libhisdATL.idl 
+         Processing .\libhisdATL.idl
+         libhisdATL.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\objidl.idl
+         objidl.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\basetsd.h
+         basetsd.h
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+         guiddef.h
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\ocidl.idl
+         ocidl.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\oleidl.idl
+         oleidl.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\servprov.idl
+         servprov.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\urlmon.idl
+         urlmon.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\msxml.idl
+         msxml.idl
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\oaidl.acf
+         oaidl.acf
+         Processing C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\ocidl.acf
+         ocidl.acf
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IE:\NicBuilder2.0\NicBuilder\trunk\source\include /IE:\NicBuilder2.0\NicBuilder\trunk\source\src\libhisdATL\\include /Zi /nologo /W1 /WX- /O2 /Oy- /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt libhisdATL.cpp PmcDB.cpp StdAfx.cpp
+         libhisdATL.cpp
+         PmcDB.cpp
+         StdAfx.cpp
+         statreg.cpp is obsolete. Please remove it from your project.
+         atlimpl.cpp is obsolete. Please remove it from your project.
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Release\libhisdATL.res" libhisdATL.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\NicBuilder2.0\NicBuilder\trunk\source\Release\libhisdATL.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:E:\NicBuilder2.0\NicBuilder\trunk\source\lib\Release\ /LIBPATH:E:\NicBuilder2.0\NicBuilder\trunk\source\bin\Release\ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\libhisdATL.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"E:\NicBuilder2.0\NicBuilder\trunk\source\Release\libhisdATL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\NicBuilder2.0\NicBuilder\trunk\source\Release\libhisdATL.lib" /MACHINE:X86 Release\libhisdATL.res
+         Release\libhisdATL.obj
+         Release\PmcDB.obj
+         Release\StdAfx.obj
+     1>MSVCRT.lib(crtexew.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function ___tmainCRTStartup
+     1>E:\NicBuilder2.0\NicBuilder\trunk\source\Release\libhisdATL.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "E:\NicBuilder2.0\NicBuilder\trunk\source\src\libhisdATL\libhisdATL.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.69

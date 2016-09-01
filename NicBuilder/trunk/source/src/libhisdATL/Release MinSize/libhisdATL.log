@@ -1,0 +1,8 @@
+﻿Build started 2015/11/19 15:52:41.
+     1>Project "E:\NicBuilder2.0\NicBuilder\trunk\source\src\libhisdATL\libhisdATL.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(283,5): error MSB8013: This project doesn't contain the Configuration and Platform combination of Release MinSize|Win32.
+     1>Done Building Project "E:\NicBuilder2.0\NicBuilder\trunk\source\src\libhisdATL\libhisdATL.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00

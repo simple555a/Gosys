@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mcview - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/mcview.res" /d "NDEBUG" /d "_AFXDLL" "E:\proj\pmc\hmi\mcView\mcview.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP38.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "HAVE_TIME" /FR"\proj\temp/" /Fp"\proj\temp/mcview.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"E:\proj\pmc\hmi\mcView\AlarmRecord.cpp"
+"E:\proj\pmc\hmi\mcView\Arc.cpp"
+"E:\proj\pmc\hmi\mcView\Button.cpp"
+"E:\proj\pmc\hmi\mcView\Cell.cpp"
+"E:\proj\pmc\hmi\mcView\common.cpp"
+"E:\proj\pmc\hmi\mcView\DiaAlarmList.cpp"
+"E:\proj\pmc\hmi\mcView\DiaInputA.cpp"
+"E:\proj\pmc\hmi\mcView\DiaInputD.cpp"
+"E:\proj\pmc\hmi\mcView\DiaPassword.cpp"
+"E:\proj\pmc\hmi\mcView\DiaSystem.cpp"
+"E:\proj\pmc\hmi\mcView\DlgAbout.cpp"
+"E:\proj\pmc\hmi\mcView\DlgDnyTip.cpp"
+"E:\proj\pmc\hmi\mcView\DlgLoop.cpp"
+"E:\proj\pmc\hmi\mcView\DlgSelect.cpp"
+"E:\proj\pmc\hmi\mcView\DlgTrendComSav.cpp"
+"E:\proj\pmc\hmi\mcView\DlgTrendTime.cpp"
+"E:\proj\pmc\hmi\mcView\DnyAttr.cpp"
+"E:\proj\pmc\hmi\mcView\Element.cpp"
+"E:\proj\pmc\hmi\mcView\Ellipse.cpp"
+"E:\proj\pmc\hmi\mcView\FView.cpp"
+"E:\proj\pmc\hmi\mcView\keyhook.cpp"
+"E:\proj\pmc\hmi\mcView\libs.cpp"
+"E:\proj\pmc\hmi\mcView\Line.cpp"
+"E:\proj\pmc\hmi\mcView\mcview.cpp"
+"E:\proj\pmc\hmi\mcView\mcviewDlg.cpp"
+"E:\proj\pmc\hmi\mcView\Meta.cpp"
+"E:\proj\pmc\hmi\mcView\Polygon.cpp"
+"E:\proj\pmc\hmi\mcView\PolyLine.cpp"
+"E:\proj\pmc\hmi\mcView\Rectangle.cpp"
+"E:\proj\pmc\hmi\mcView\RoundRect.cpp"
+"E:\proj\pmc\hmi\mcView\Text.cpp"
+"E:\proj\pmc\hmi\mcView\Trend.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP38.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP39.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "HAVE_TIME" /FR"\proj\temp/" /Fp"\proj\temp/mcview.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"E:\proj\pmc\hmi\mcView\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP39.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3A.tmp" with contents
+[
+Rpcrt4.lib /nologo /subsystem:windows /incremental:no /pdb:"\proj\target\release/mcview.pdb" /debug /machine:I386 /out:"\proj\target\release/mcview.exe" /libpath:"\proj\imp_all" 
+\proj\temp\AlarmRecord.obj
+\proj\temp\Arc.obj
+\proj\temp\Button.obj
+\proj\temp\Cell.obj
+\proj\temp\common.obj
+\proj\temp\DiaAlarmList.obj
+\proj\temp\DiaInputA.obj
+\proj\temp\DiaInputD.obj
+\proj\temp\DiaPassword.obj
+\proj\temp\DiaSystem.obj
+\proj\temp\DlgAbout.obj
+\proj\temp\DlgDnyTip.obj
+\proj\temp\DlgLoop.obj
+\proj\temp\DlgSelect.obj
+\proj\temp\DlgTrendComSav.obj
+\proj\temp\DlgTrendTime.obj
+\proj\temp\DnyAttr.obj
+\proj\temp\Element.obj
+\proj\temp\Ellipse.obj
+\proj\temp\FView.obj
+\proj\temp\keyhook.obj
+\proj\temp\libs.obj
+\proj\temp\Line.obj
+\proj\temp\mcview.obj
+\proj\temp\mcviewDlg.obj
+\proj\temp\Meta.obj
+\proj\temp\Polygon.obj
+\proj\temp\PolyLine.obj
+\proj\temp\Rectangle.obj
+\proj\temp\RoundRect.obj
+\proj\temp\StdAfx.obj
+\proj\temp\Text.obj
+\proj\temp\Trend.obj
+\proj\temp\mcview.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlarmRecord.cpp
+Arc.cpp
+Button.cpp
+Cell.cpp
+common.cpp
+DiaAlarmList.cpp
+DiaInputA.cpp
+DiaInputD.cpp
+DiaPassword.cpp
+DiaSystem.cpp
+DlgAbout.cpp
+DlgDnyTip.cpp
+DlgLoop.cpp
+DlgSelect.cpp
+DlgTrendComSav.cpp
+DlgTrendTime.cpp
+DnyAttr.cpp
+Element.cpp
+Ellipse.cpp
+FView.cpp
+Generating Code...
+Compiling...
+keyhook.cpp
+libs.cpp
+Line.cpp
+mcview.cpp
+mcviewDlg.cpp
+Meta.cpp
+Polygon.cpp
+PolyLine.cpp
+Rectangle.cpp
+RoundRect.cpp
+Text.cpp
+Trend.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3C.tmp" with contents
+[
+/nologo /o"\proj\target\release/mcview.bsc" 
+\proj\temp\StdAfx.sbr
+\proj\temp\AlarmRecord.sbr
+\proj\temp\Arc.sbr
+\proj\temp\Button.sbr
+\proj\temp\Cell.sbr
+\proj\temp\common.sbr
+\proj\temp\DiaAlarmList.sbr
+\proj\temp\DiaInputA.sbr
+\proj\temp\DiaInputD.sbr
+\proj\temp\DiaPassword.sbr
+\proj\temp\DiaSystem.sbr
+\proj\temp\DlgAbout.sbr
+\proj\temp\DlgDnyTip.sbr
+\proj\temp\DlgLoop.sbr
+\proj\temp\DlgSelect.sbr
+\proj\temp\DlgTrendComSav.sbr
+\proj\temp\DlgTrendTime.sbr
+\proj\temp\DnyAttr.sbr
+\proj\temp\Element.sbr
+\proj\temp\Ellipse.sbr
+\proj\temp\FView.sbr
+\proj\temp\keyhook.sbr
+\proj\temp\libs.sbr
+\proj\temp\Line.sbr
+\proj\temp\mcview.sbr
+\proj\temp\mcviewDlg.sbr
+\proj\temp\Meta.sbr
+\proj\temp\Polygon.sbr
+\proj\temp\PolyLine.sbr
+\proj\temp\Rectangle.sbr
+\proj\temp\RoundRect.sbr
+\proj\temp\Text.sbr
+\proj\temp\Trend.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+mcview.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
