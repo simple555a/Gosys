@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2691534A-240B-488E-96D6-2C1BB495DA1A}</ProjectGuid>
+    <RootNamespace>mcview</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>\proj\target\release/mcview.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /pmc2/sdk/include" " %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;HAVE_TIME;EVTLQ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>..\..\target\release/mcview.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>\proj\target\bin/mcview.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /pmc2/sdk/include" " %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;EVTLQ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AlarmRecord.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Arc.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="BCMenu.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="Button.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DiaAlarmDlg.cpp" />
+    <ClCompile Include="DiaInputA.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DiaInputD.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DiaPassword.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DiaQueryAlarm.cpp" />
+    <ClCompile Include="DiaSystem.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DiaUserEdit.cpp" />
+    <ClCompile Include="DiaUserGroupEdit.cpp" />
+    <ClCompile Include="DiaUserGroupNew.cpp" />
+    <ClCompile Include="DiaUserManager.cpp" />
+    <ClCompile Include="DiaUserNew.cpp" />
+    <ClCompile Include="DlgAbout.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgDnyTip.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgLoop.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgSelect.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgSelectKName.cpp" />
+    <ClCompile Include="DlgTrendComSav.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgTrendTime.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DnyAttr.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Element.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Ellipse.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="FView.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="keyhook.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="libs.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="mcview.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="mcviewDlg.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Meta.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Polygon.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="PolyLine.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="RoundRect.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="ScreenShutter.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestBtn.cpp" />
+    <ClCompile Include="Text.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Trend.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlarmListBox.h" />
+    <ClInclude Include="AlarmRecord.h" />
+    <ClInclude Include="Arc.h" />
+    <ClInclude Include="BCMenu.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="DiaAlarmDlg.h" />
+    <ClInclude Include="DiaAlarmList.h" />
+    <ClInclude Include="DiaInputA.h" />
+    <ClInclude Include="DiaInputD.h" />
+    <ClInclude Include="DiaPassword.h" />
+    <ClInclude Include="DiaQueryAlarm.h" />
+    <ClInclude Include="DiaSystem.h" />
+    <ClInclude Include="DiaUserEdit.h" />
+    <ClInclude Include="DiaUserGroupEdit.h" />
+    <ClInclude Include="DiaUserGroupNew.h" />
+    <ClInclude Include="DiaUserManager.h" />
+    <ClInclude Include="DiaUserNew.h" />
+    <ClInclude Include="DlgAbout.h" />
+    <ClInclude Include="DlgDnyTip.h" />
+    <ClInclude Include="DlgLoop.h" />
+    <ClInclude Include="DlgSelect.h" />
+    <ClInclude Include="DlgSelectKName.h" />
+    <ClInclude Include="DlgTrendComSav.h" />
+    <ClInclude Include="DlgTrendTime.h" />
+    <ClInclude Include="Dnyattr.h" />
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="FView.h" />
+    <ClInclude Include="keyhook.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="mcview.h" />
+    <ClInclude Include="mcviewDlg.h" />
+    <ClInclude Include="Meta.h" />
+    <ClInclude Include="Polygon.h" />
+    <ClInclude Include="PolyLine.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RoundRect.h" />
+    <ClInclude Include="ScreenShutter.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestBtn.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="Trend.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cursor2.cur" />
+    <None Include="res\H_POINT.CUR" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\mcview.ico" />
+    <None Include="res\mcview.rc2" />
+    <None Include="res\na.bmp" />
+    <None Include="res\na.ico" />
+    <None Include="res\声音关闭.ico" />
+    <None Include="res\声音打开.ico" />
+    <None Include="版本说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mcview.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="mcview.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

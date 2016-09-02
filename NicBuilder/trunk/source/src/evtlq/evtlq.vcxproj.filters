@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6fae13d1-8041-47bc-af6f-9193d911066d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f3b83cd7-a29e-4200-b50e-26ac78f46113}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2839cdeb-1e85-4065-bf3b-945eee6af6f3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgQueryById.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgServerIP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="evtlq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuerySocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgQueryById.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgServerIP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="evtlq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files\Microsoft Visual Studio\VC98\Include\GL\GLAUX.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libhis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuerySocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\evtlq.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\evtlq.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mcEvtQuery.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="evtlq.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

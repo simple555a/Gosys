@@ -1,0 +1,6 @@
+LIBRARY	"librtkshell"
+EXPORTS
+	shell_create
+	shell_execute
+	shell_execute_ex
+	shell_destroy

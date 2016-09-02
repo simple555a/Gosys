@@ -1,0 +1,3 @@
+LIBRARY librtkproxy
+EXPORTS
+	_g_ProxyDispatchTable=g_ProxyDispatchTable

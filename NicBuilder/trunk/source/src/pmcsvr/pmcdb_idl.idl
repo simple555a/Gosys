@@ -1,0 +1,80 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+#ifdef MAKE_PMCDB_TLB
+[
+	uuid(4a906362-612d-43fb-a4cb-9387fcc130e7),
+	version(1.0),
+	helpstring("pmcdb 1.0 type library")
+]
+library pmcdb{
+	importlib("stdole2.tlb");
+#endif
+
+interface IPmcDB;
+dispinterface IPmcDBEvents;
+
+[
+	object,
+	uuid(F35F7568-07D5-4137-A9C9-E8737A394536),
+	dual,
+	nonextensible,
+	helpstring("IPmcDB 接口"),
+	pointer_default(unique)
+]
+interface IPmcDB : IDispatch{
+	[helpstring("方法lock")] HRESULT lock(BOOL exclusive, LONG timeOut);
+	[helpstring("方法unlock")] HRESULT unlock(void);
+	
+	[helpstring("方法readTag")] HRESULT readSnapshot([in] BSTR tagName, [out,retval] VARIANT* tagValue);
+	[helpstring("方法writeTag")] HRESULT writeDevice([in] BSTR tagName, [in] VARIANT tagValue);
+	[helpstring("Read archive values")] HRESULT readArchiveValue(
+		[in] BSTR tagName, 
+		[in] VARIANT time, 
+		[out,retval] VARIANT * tagValue
+		);
+
+	/* 2006-3-14 batch read/write */
+	[helpstring("read multiple tag values")] HRESULT readSnapshots(
+		[in] LONG count,
+		[in] VARIANT tagNames, 
+              [in, out] VARIANT * tagValues
+              );
+	[helpstring("read multiple tag values")] HRESULT writeSnapshots(
+		[in] LONG count,
+		[in] VARIANT tagNames, 
+              [in] VARIANT tagValues
+              );
+	[helpstring("read multiple tag values")] HRESULT readArchiveValues(
+		[in] VARIANT tagNames, 
+		[in] VARIANT startTime,
+		[in] LONG interval,
+		[in] LONG count,
+              [in, out] VARIANT * tagValues
+              );
+              
+	[helpstring("Sleep")] HRESULT sleep([in] LONG miliSeconds);
+};
+
+[
+	uuid(5F679D6F-6147-4865-8495-F28A605310FA),
+	helpstring("IPmcDB事件接口")
+]
+dispinterface IPmcDBEvents
+{
+	properties:
+	methods:
+		[id(1)] HRESULT OnAddTag([in] BSTR name);
+		[id(2)] HRESULT OnDropTag([in] BSTR names);
+		[id(3)] HRESULT OnTagModified([in]BSTR name);
+		[id(4)] HRESULT OnAddGroup([in]BSTR name);
+		[id(5)] HRESULT OnDropGroup([in]BSTR name);
+		[id(6)] HRESULT OnGroupModified([in] BSTR name);
+		[id(7)] HRESULT OnAlarm([in] int rank, [in] int ac, [in] BSTR msg, [in] BSTR sourceHost);
+		[id(8)] HRESULT OnAddNode([in] BSTR name);
+		[id(9)] HRESULT OnDropNode([in] BSTR name);
+};
+
+#ifdef MAKE_PMCDB_TLB
+};
+#endif

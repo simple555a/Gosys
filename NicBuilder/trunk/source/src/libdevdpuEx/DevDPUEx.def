@@ -1,0 +1,8 @@
+LIBRARY	"libdevdpuEx"
+EXPORTS
+load
+update_tag
+start_device
+stop_device
+unload
+write_device

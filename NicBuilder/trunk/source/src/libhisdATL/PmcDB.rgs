@@ -1,0 +1,26 @@
+HKCR
+{
+	LibhisdATL.PmcDB.1 = s 'PmcDB Class'
+	{
+		CLSID = s '{4366947A-0715-4219-920D-89C5C00E9F72}'
+	}
+	LibhisdATL.PmcDB = s 'PmcDB Class'
+	{
+		CLSID = s '{4366947A-0715-4219-920D-89C5C00E9F72}'
+		CurVer = s 'LibhisdATL.PmcDB.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {4366947A-0715-4219-920D-89C5C00E9F72} = s 'PmcDB Class'
+		{
+			ProgID = s 'LibhisdATL.PmcDB.1'
+			VersionIndependentProgID = s 'LibhisdATL.PmcDB'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{1316CB03-5410-4C39-9975-9C6CCAFB4DF5}'
+		}
+	}
+}

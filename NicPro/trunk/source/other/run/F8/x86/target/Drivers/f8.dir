@@ -1,0 +1,9 @@
+[library]
+catagory=Drivers
+0=D_AS_VAL,BB,D_AS_VAL.blk,f1df-84ff-432a-4081,3039
+1=D_DS_VAL,BB,D_DS_VAL.blk,f880-fa5c-fb2e-3603,2287
+2=D_DT_VAL,BB,D_DT_VAL.blk,a2c2-c36c-8c7e-9cb9,3140
+3=MTR_LGE,BB,MTR_LGE.blk,ff29-8bbb-ab11-8be2,3531
+4=MTR_LTE,BB,MTR_LTE.blk,f880-fa5c-fb2e-3601,2274
+5=S_E_VAL,BB,S_E_VAL.blk,f880-fa5c-fb2e-3602,1095
+count=6

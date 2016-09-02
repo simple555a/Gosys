@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC402B94-16A0-4B45-9C3C-9647C28AFCA7}</ProjectGuid>
+    <RootNamespace>evtlq</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>\proj\target\bin/evtlq.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /panxh/inc_all" " %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;EVTLQ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/libpath:"/panxh/imp_all" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>\proj\target\Release/evtlq.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /panxh/inc_all" " %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;EVTLQ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/libpath:"/panxh/imp_all" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\Release/evtlq.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildView.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgQuery.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgQueryById.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="DlgServerIP.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="evtlq.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="QuerySocket.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildView.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="DlgQuery.h" />
+    <ClInclude Include="DlgQueryById.h" />
+    <ClInclude Include="DlgServerIP.h" />
+    <ClInclude Include="evtlq.h" />
+    <ClInclude Include="D:\Program Files\Microsoft Visual Studio\VC98\Include\GL\GLAUX.H" />
+    <ClInclude Include="..\libhis.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="QuerySocket.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\evtlq.ico" />
+    <None Include="res\evtlq.rc2" />
+    <None Include="res\mcEvtQuery.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="evtlq.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

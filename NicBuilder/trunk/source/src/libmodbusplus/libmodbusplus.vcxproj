@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{C78ECB4B-E576-2D96-458F-065908E2E7D9}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBMODBUSPLUS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>\proj\target\bin\libmodbusplus.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBMODBUSPLUS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>\proj\temp\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>\proj\temp\libmodbusplus.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>\proj\temp\</ObjectFileName>
+      <ProgramDataBaseFileName>\proj\temp\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>\proj\target\bin\libmodbusplus.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\libmodbusplus.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="device.cpp" />
+    <ClCompile Include="libs.cpp" />
+    <ClCompile Include="modicon.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

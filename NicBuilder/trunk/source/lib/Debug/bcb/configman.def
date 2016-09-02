@@ -1,0 +1,6 @@
+LIBRARY libconfigman
+EXPORTS
+	get_config_string
+	set_config_string
+	get_config_int
+	set_config_int

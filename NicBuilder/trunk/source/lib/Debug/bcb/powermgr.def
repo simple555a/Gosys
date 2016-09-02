@@ -1,0 +1,7 @@
+LIBRARY LIBPOWERMGR
+EXPORTS
+    get_power_state
+    init_powermgr
+    register_power_callback
+    set_power_state
+    unregister_power_callback

@@ -1,0 +1,11 @@
+LIBRARY LIBSPAC
+EXPORTS    
+    close_port
+    flush_port
+    init_spac
+    lock_port
+    open_port
+    read_port
+    uninit_spac
+    unlock_port
+    write_port

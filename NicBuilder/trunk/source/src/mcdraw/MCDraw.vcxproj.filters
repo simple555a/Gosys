@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{185e66b4-407f-4255-8563-2afe46fa67e5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a5424c24-f81c-4e3d-953d-03c8c4ef86cb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{bea20777-7170-4a0f-80c2-c662d2160413}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DiaBlink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaButtonA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaButtonD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaButtonWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaCellAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaColorAA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaColorD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaColorDA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaDirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaDnyAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaEnable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaFillH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaFillV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaInputA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaInputD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaPosH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaPosV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaReplace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSelect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSizeH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSizeV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSlideH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSlidV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaTrendAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaValueA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaValueD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaVisibility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCDrawDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCDrawView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptShow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaColorA.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MCDraw.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ui\arc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ui\button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ui\cell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ui\Cursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaBlink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaButtonA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaButtonD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaButtonWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaCellAttr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaColorA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaColorAA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaColorD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaColorDA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaDirection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaDnyAttr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaEnable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaFillH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaFillV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaInputA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaInputD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaPosH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaPosV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaReplace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSizeH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSizeV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSlideH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSlidV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaTrendAttr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaValueA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaValueD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaVisibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\dnyattr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\ellipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCDraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCDrawDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCDrawView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptShow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\polygon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\polyline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\roundrect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\trend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proj\inc_all\ui\Zoom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a10.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a11.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a12.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a13.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a5.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a6.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a7.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a8.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\line1a9.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\linenull.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\linesoli.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MCDraw.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MCDraw.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MCDrawDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z10.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z11.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z12.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z13.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z14.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z15.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z16.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z17.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z18.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z19.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z20.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z21.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z5.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z6.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z7.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z8.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\z9.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="版本说明.txt" />
+  </ItemGroup>
+</Project>

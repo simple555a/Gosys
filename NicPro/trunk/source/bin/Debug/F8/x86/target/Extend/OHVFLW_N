@@ -1,0 +1,30 @@
+fblock OHVFLW_N;		//计算过热蒸汽流量
+uuid{35e0-c65b-b195-f3ba};
+var
+	T:float;in;	//过热蒸汽温度
+	P:float;in;	//过热蒸汽压力
+	dP:float;in;	//过热蒸汽流量差压信号
+	C:float;in;	//修正系数
+	Fmax:float;in;	//过热蒸汽额定流量
+	T0:float;in;	//额定工况过热蒸汽温度
+	P0:float;in;	//额定工况过热蒸汽压力
+	dPmax:float;in;	//过热蒸汽流量最大差压信号
+	OUT:float;out;	//过热蒸汽流量输出
+implementation
+static float K,m1,m2;
+
+void main()
+{
+	m1 = 1.0 /(((0.0047*T0 + 1.286)/(10.20*P0 + 1)) - 0.0097 + 1.32*0.00001*C)*dPmax;
+	m2 = 1.0 /(((0.0047*T + 1.286)/(10.20*P + 1)) - 0.0097 + 1.32*0.00001*C)*dP;
+	if(m1 <= 0){
+		K = 0;
+	}else{
+		K = 1.0 / sqrt(m1);
+	}
+	if(m2 <= 0){
+		OUT = 0;
+	}else{
+		OUT = K * sqrt(m2) * Fmax;
+	}
+}

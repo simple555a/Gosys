@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="d:/proj/target/bin\licman.exe"/>
+    <OBJFILES value="licman.obj Unit1.obj Unit2.obj ..\pmc_license.obj ..\hdid.obj ..\d3des.obj 
+      Unit3.obj"/>
+    <RESFILES value="licman.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm Unit2.dfm Unit3.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vclx.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;.."/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="licman.cpp"/>
+    <INCLUDEPATH value="..\;..;res;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;d:\proj\common\include;d:/proj/common/include/private;d:\proj\common\include/public;d:/proj/pmc/3.5/include;d:/proj/pmc/3.5/include/private;d:/proj/pmc/3.5/include/public"/>
+    <LIBPATH value="..\;..;res;&quot;c:\program files\borland\cbuilder6\include\vcl&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib;d:\proj\common\implib\bcb;d:\proj\pmc\3.5\implib\bcb"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -I..\. -I.. -Ires 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -Id:\proj\common\include 
+      -Id:/proj/common/include/private -Id:\proj\common\include/public 
+      -Id:/proj/pmc/3.5/include -Id:/proj/pmc/3.5/include/private 
+      -Id:/proj/pmc/3.5/include/public -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="licman.res" FORMNAME="" UNITNAME="licman.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="licman.cpp" FORMNAME="" UNITNAME="licman" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="Form2" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\pmc_license.cpp" FORMNAME="" UNITNAME="pmc_license" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hdid.cpp" FORMNAME="" UNITNAME="hdid" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\d3des.c" FORMNAME="" UNITNAME="d3des" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit3.cpp" FORMNAME="Form3" UNITNAME="Unit3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\;..;res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;d:\proj\common\include;d:/proj/common/include/private;d:\proj\common\include/public;d:/proj/pmc/3.5/include;d:/proj/pmc/3.5/include/private;d:/proj/pmc/3.5/include/public
+Item1=..;res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;d:\proj\common\include;d:/proj/common/include/private;d:\proj\common\include/public;d:/proj/pmc/3.5/include;d:/proj/pmc/3.5/include/private;d:/proj/pmc/3.5/include/public
+Item2=..\;res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;d:\proj\common\include;d:/proj/common/include/private;d:\proj\common\include/public;d:/proj/pmc/3.5/include;d:/proj/pmc/3.5/include/private;d:/proj/pmc/3.5/include/public
+Item3=res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;d:\proj\common\include;d:/proj/common/include/private;d:\proj\common\include/public;d:/proj/pmc/3.5/include;d:/proj/pmc/3.5/include/private;d:/proj/pmc/3.5/include/public
+Item4=..\;C:\Program Files\Borland\CBuilder6\Projects;D:\proj\pmc\3.5\kernel\lib\pmckey\licman;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=..\;..;res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;d:\proj\common\implib\bcb;d:\proj\pmc\3.5\implib\bcb
+Item1=..;res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;d:\proj\common\implib\bcb;d:\proj\pmc\3.5\implib\bcb
+Item2=..\;res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;d:\proj\common\implib\bcb;d:\proj\pmc\3.5\implib\bcb
+Item3=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;d:\proj\common\implib\bcb;d:\proj\pmc\3.5\implib\bcb
+Item4=..\;C:\Program Files\Borland\CBuilder6\Projects;D:\proj\pmc\3.5\kernel\lib\pmckey\licman;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=d:/proj/target/bin\
+Item1=d:/proj/target/bin
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=--debug
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

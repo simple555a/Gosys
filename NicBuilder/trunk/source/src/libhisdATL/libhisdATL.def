@@ -1,0 +1,9 @@
+; libhisdATL.def : Declares the module parameters.
+
+LIBRARY      "libhisdATL.DLL"
+
+EXPORTS
+	DllCanUnloadNow PRIVATE
+	DllGetClassObject PRIVATE
+	DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE

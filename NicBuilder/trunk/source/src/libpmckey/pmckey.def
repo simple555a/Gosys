@@ -1,0 +1,6 @@
+LIBRARY	"libpmckey"
+EXPORTS
+	init_key @1 NONAME
+	get_key @2 NONAME
+	set_product_type @3 NONAME
+	get_product_type @4 NONAME

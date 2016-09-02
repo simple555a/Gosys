@@ -1,0 +1,54 @@
+LIBRARY LIBRTK
+EXPORTS 
+	rtk_get_last_error
+	alloc_buffer
+	close_handle
+	fill_buffer
+	rtk_alloc_memory
+	free_buffer
+	get_config_file
+	get_working_dir
+	get_exe_dir
+	html_help
+	rtk_logged_puts
+	rtk_set_last_error
+	rtk_time_diff
+	rtk_time_mark
+	set_working_dir
+	alloc_buffer_v
+	fill_buffer_v
+	rtk_alloc_string
+
+	rtk_sleep	
+	create_rthread
+	start_rthread
+	stop_rthread
+	suspend_rthread
+	resume_rthread
+	wait_rthread
+	notify_rthread
+	id_rthread
+	create_periodic_rthread
+	create_rtk_lock
+	create_rtk_mutex
+	create_rtk_event
+	create_rtk_rwlock
+	create_rtk_semaphore
+	set_rtk_event
+	reset_rtk_event
+	lock_rtk_object
+	unlock_rtk_object
+	rd_lock_rtk_object
+	wr_lock_rtk_object
+	rw_unlock_rtk_object
+	
+	wait_rtk_event
+	get_thread_event
+	msg_wait_multiple
+
+	create_rthread_pool
+	get_thread_from_pool
+	queue_pool_item
+	qsort_r
+	bsearch_r
+	stop_request_pending

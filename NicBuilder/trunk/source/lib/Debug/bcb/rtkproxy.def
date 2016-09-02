@@ -1,0 +1,39 @@
+LIBRARY LIBRTKPROXY
+EXPORTS
+    add_groups
+    add_tags
+    discover_configfiles
+    discover_devices
+    discover_files
+    discover_groups
+    discover_nodes
+    discover_pictures
+    discover_tags
+    download_file
+    drop_groups
+    drop_tags
+    edit_groups
+    edit_tags
+    init_proxy
+    proxy_add_device
+    proxy_del_device
+    proxy_delete_file
+    proxy_edit_device
+    proxy_get_file_size
+    proxy_read_tags
+    proxy_release_data
+    proxy_write_tags
+    reload_tags
+    rtk_dispatch_events
+    uninit_proxy
+    upload_file
+    g_ProxyDispatchTable
+    rtk_queue_event
+
+
+
+
+
+
+
+

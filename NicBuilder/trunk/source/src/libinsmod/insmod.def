@@ -1,0 +1,6 @@
+LIBRARY	"libinsmod"
+
+EXPORTS
+
+insmod_main
+dll_main

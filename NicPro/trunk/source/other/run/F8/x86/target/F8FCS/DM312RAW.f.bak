@@ -1,0 +1,77 @@
+fblock DM312RAW;
+attribute(autoscan);
+uuid{bde8-883b-134e-18dc};
+var
+	ADDR: word; in;
+	RA1: integer; out;
+	RA2: integer; out;
+	RA3: integer; out;
+	RA4: integer; out;
+	RA5: integer; out;
+	RA6: integer; out;
+	RA7: integer; out;
+	RA8: integer; out;
+	LM75: word; out;
+	A1: float; out;
+	A2: float; out;
+	A3: float; out;
+	A4: float; out;
+	A5: float; out;
+	A6: float; out;
+	A7: float; out;
+	A8: float; out;	
+	T: float; out;
+	
+implementation
+
+static float get_tc_val(integer val_ch)
+{
+	float val, ref;
+	int s;	
+	
+	if(val_ch > 30000 || val < -30000){
+		return -999.;
+	}
+	
+	if(val_ch < 0){
+		s = -1;
+		val_ch = - val_ch;
+	}else{
+		s = 1;
+	}
+	val = (float)val_ch * 2.5 / 32. / 32768.;	
+	
+	return  val;
+	
+}
+
+int main()
+{
+	int i;
+	f8_i16 * pVal;
+	pVal = (f8_i16*)io_mem(ADDR);
+	
+	if(!pVal){
+		return -1;
+	}
+	
+	RA1 = pVal[0];
+	RA2 = pVal[1];
+	RA3 = pVal[2];
+	RA4 = pVal[3];
+	RA5 = pVal[4];
+	RA6 = pVal[5];
+	RA7 = pVal[6];
+	RA8 = pVal[7];
+	LM75 = pVal[8];
+
+	A1 = get_tc_val(RA1);
+	A2 = get_tc_val(RA2);
+	A3 = get_tc_val(RA3);
+	A4 = get_tc_val(RA4);
+	A5 = get_tc_val(RA5);
+	A6 = get_tc_val(RA6);
+	A7 = get_tc_val(RA7);
+	A8 = get_tc_val(RA8);
+	T = LM75 / 256.;
+}

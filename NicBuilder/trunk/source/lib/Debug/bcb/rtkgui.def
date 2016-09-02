@@ -1,0 +1,19 @@
+LIBRARY LIBRTKGUI
+
+EXPORTS
+	RtkGuiAboutBox @1 NONAME
+	RtkGuiWDGetHwnd @2 NONAME
+	RtkGuiWDStart @3 NONAME
+	RtkGuiWDSetPos @4 NONAME
+	RtkGuiWDSetState @5 NONAME
+	RtkGuiWDDestroy @6 NONAME
+	RtkGuiWDSetCaption @7 NONAME
+	RtkGuiWDSetBtnText @8 NONAME
+	RtkGuiWDGetBtnState @9 NONAME
+	RtkGuiWDEnableSkin @10 NONAME
+	RtkGuiMsgBox @11 NONAME
+	RtkGuiMsgBoxEx @12 NONAME
+	RtkGuiGetFileVersion @13 NONAME
+	RtkGuiDrawDIB @14 NONAME
+	RtkGuiLoadBMP @15 NONAME
+	pmcAbout @16 NONAME

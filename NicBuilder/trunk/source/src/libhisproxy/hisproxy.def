@@ -1,0 +1,24 @@
+LIBRARY	"libhisproxy"
+EXPORTS
+    initHisProxy
+    uninitHisProxy
+    queryHisData
+    getHisData
+    
+    hislogKeyByTime
+    hislogTimeByKey
+    hislogGetCurrentTime
+    
+    createArchiveCache
+    cacheSetTimeSpan
+    cacheScrollTimeSpan
+    cacheSetNames
+    cacheQuery
+    cacheGetFlag
+    cacheGetValue
+    cacheGetStartTime
+    cacheGetEndTime
+    cacheGetStep
+    cacheGetValueCount
+    cacheGetReturnedValueCount
+    cacheGetTagCount

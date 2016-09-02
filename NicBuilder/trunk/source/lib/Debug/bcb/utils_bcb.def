@@ -1,0 +1,5 @@
+LIBRARY LIBUTILS
+EXPORTS
+	_utils_debugA=utils_debugA
+	_utils_putsA=utils_putsA
+	_utils_traceA=utils_traceA

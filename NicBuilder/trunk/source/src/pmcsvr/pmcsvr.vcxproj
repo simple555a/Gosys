@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MinDependency|Win32">
+      <Configuration>Release MinDependency</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MinSize|Win32">
+      <Configuration>Release MinSize</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release MinDependency|Win32">
+      <Configuration>Unicode Release MinDependency</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release MinSize|Win32">
+      <Configuration>Unicode Release MinSize</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>AtlProj</Keyword>
+    <ProjectGuid>{804BF236-CB2C-5059-08E7-375BCD1FBA3C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CustomBuildBeforeTargets>PostBuildEvent</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <OutDir>$(SolutionDir)temp\link\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\compile\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>\proj\target\bin\pmcsvr.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\pmcsvr.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>
+      </TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\pmcsvr.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>\proj\target\bin\pmcsvr.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\pmcsvr.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>\proj\target\bin\pmcsvr.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\pmcsvr.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>
+      </TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\pmcsvr.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+      <Message>
+      </Message>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>
+      </TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>\proj\target\bin\pmcsvr.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(ProjectDir)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)bin\$(Configuration)\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir) $(SolutionDir)bin\$(Configuration)\</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)bin\$(Configuration)\$(TargetFileName)" /RegServer 
+echo regsvr32 exec. time &gt; "$(SolutionDir)bin\$(Configuration)\regsvr32.trg" 
+echo Server registration done! </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>$(SolutionDir)bin\$(Configuration)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="datagroup.cpp" />
+    <ClCompile Include="opcserver.cpp" />
+    <ClCompile Include="pmcdb.cpp" />
+    <ClCompile Include="pmcsvr.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="opcda.idl">
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opcda_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">opcda_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">opcda_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">opcda_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">opcda_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">opcda_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">opcda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">opcda_c.h</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">opcda_p.c</ProxyFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">$(IntDir)opcda.tlb</TypeLibraryName>
+    </Midl>
+    <Midl Include="pmcdb_idl.idl">
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmcdb_idl.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">pmcdb_idl.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">pmcdb_idl.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">pmcdb_idl.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">pmcdb_idl.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">pmcdb_idl.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">pmcdb_idl.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">pmcdb_idl_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">pmcdb_idl_p.c</ProxyFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">$(IntDir)pmcdb_idl.tlb</TypeLibraryName>
+    </Midl>
+    <Midl Include="pmcsvr.idl">
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">true</GenerateStublessProxies>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmcsvr_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">pmcsvr_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">pmcsvr_p.c</ProxyFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">pmcsvr_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">pmcsvr_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">pmcsvr_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">pmcsvr_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">pmcsvr_p.c</ProxyFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">pmcsvr_p.c</ProxyFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(IntDir)pmcsvr.tlb</TypeLibraryName>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="datagroup.h" />
+    <ClInclude Include="opcserver.h" />
+    <ClInclude Include="pmcdb.h" />
+    <ClInclude Include="pmcsvr.h" />
+    <ClInclude Include="pmcsvrCP.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="opcserver.rgs" />
+    <CustomBuild Include="pmcdb.rgs" />
+    <CustomBuild Include="pmcsvr.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pmcsvrps.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,16 @@
+#
+# docs:
+#
+fblock <op_name>_<type_name_u>;
+uuid{};
+var
+	IN1:<type_name>; in;
+	IN2:<type_name>; in;
+	OUT:<type_name>; out;
+
+implementation
+
+void main()
+{
+	OUT = IN1 <op> IN2;
+}

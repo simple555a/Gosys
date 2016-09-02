@@ -1,0 +1,26 @@
+HKCR
+{
+	cncs.model.pmcdb.1 = s 'PmcDB Class'
+	{
+		CLSID = s '{6CE09E7F-B339-47B1-9449-2CF3E94C1A65}'
+	}
+	cncs.model.pmcdb = s 'PmcDB Class'
+	{		
+		CurVer = s 'cncs.model.pmcdb.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6CE09E7F-B339-47B1-9449-2CF3E94C1A65} = s 'PmcDB Class'
+		{
+			ProgID = s 'cncs.model.pmcdb.1'
+			VersionIndependentProgID = s 'cncs.model.pmcdb'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{0E2A80B6-5F30-46A4-9D25-79D95AD4154E}'
+			Version = s '1.0'
+		}
+	}
+}

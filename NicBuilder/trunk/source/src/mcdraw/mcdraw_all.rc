@@ -1,0 +1,2 @@
+#include "mcdraw.rc"
+#include "version.rc"

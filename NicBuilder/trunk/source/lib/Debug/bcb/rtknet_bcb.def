@@ -1,0 +1,3 @@
+LIBRARY librtknet
+EXPORTS
+    _vbus_system=vbus_system

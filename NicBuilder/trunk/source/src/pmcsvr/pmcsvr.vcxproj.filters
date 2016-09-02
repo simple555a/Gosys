@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8bb476cf-1031-407c-ad8c-e85f7762868d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fe56da7c-5cde-4b21-9e60-44148572e9d5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ea073eca-0a9b-4039-84ba-c2cde70e7edd}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="datagroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opcserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pmcdb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pmcsvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="pmcsvr.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+    <Midl Include="opcda.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+    <Midl Include="pmcdb_idl.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pmcdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="datagroup.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opcserver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pmcsvr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pmcsvrCP.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="opcserver.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pmcdb.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pmcsvr.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pmcsvrps.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

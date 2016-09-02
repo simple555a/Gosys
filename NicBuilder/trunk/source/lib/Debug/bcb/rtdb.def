@@ -1,0 +1,61 @@
+LIBRARY LIBRTDB
+EXPORTS
+    create_group
+    create_node
+    create_tag
+    cursor_clear_subitems
+    cursor_delete
+    cursor_get_item
+    cursor_get_subitem_count
+    cursor_is_end
+    cursor_move_end
+    cursor_move_next
+    cursor_open_first_subitem
+    dbg_dump_tag
+    dbg_random_tag
+    fire_rtdb_event
+    hook_rtdb_events
+    init_rtdb
+    lock_rtdb
+    mask_by_string
+    open_first_node
+    open_group
+    open_group_f
+    open_local_node
+    open_node
+    open_tag
+    open_tag_f
+    open_tag_g
+    open_tag_t
+    query_group
+    query_node
+    query_tag
+    query_tag_f
+    query_tag_g
+    string_by_mask
+    tag_trans_error
+    validate_tag
+
+    tagname_by_textA
+    tagname_to_textA
+    tagname_by_textW
+    tagname_to_textW
+    
+    tag_by_textA
+    tag_to_textA
+    tag_by_textW
+    tag_to_textW
+
+    tag_by_text2A
+    tag_to_text2A    
+    tag_by_text2W
+    tag_to_text2W
+
+    unhook_rtdb_events
+    uninit_rtdb
+    unlock_rtdb
+
+    pmc_type_cast
+    pmc_empty
+    pmc_clear
+    pmc_value_string

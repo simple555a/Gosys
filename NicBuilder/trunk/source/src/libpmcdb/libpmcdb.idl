@@ -1,0 +1,91 @@
+// libpmcdb.idl : libpmcdb 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(libpmcdb.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(a817e7a2-43fa-11d0-9e44-00aa00b6770a),
+	dual,	
+	pointer_default(unique)
+]
+interface IComponentRegistrar : IDispatch
+{
+	[id(1)]	HRESULT Attach([in] BSTR bstrPath);
+	[id(2)]	HRESULT RegisterAll();
+	[id(3)]	HRESULT UnregisterAll();
+	[id(4)]	HRESULT GetComponents([out] SAFEARRAY(BSTR)* pbstrCLSIDs, [out] SAFEARRAY(BSTR)* pbstrDescriptions);
+	[id(5)]	HRESULT RegisterComponent([in] BSTR bstrCLSID);
+	[id(6)] HRESULT UnregisterComponent([in] BSTR bstrCLSID);
+};
+
+[
+	object,
+	uuid(5D2076E3-68A4-4209-B965-45D48E28C65A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IPmcDB : IDispatch{
+
+	[id(1)]HRESULT rtdbLock([in]BOOL exclusive,[in] LONG timeOut);
+	[id(2)] HRESULT rtdbUnlock(void);
+	
+	[id(3)] HRESULT readSnapshot([in] BSTR tagName, [out,retval] VARIANT* tagValue);
+	[id(4)] HRESULT writeDevice([in] BSTR tagName, [in] VARIANT tagValue);
+	[id(5)] HRESULT readArchiveValue(
+		[in] BSTR tagName, 
+		[in] VARIANT time, 
+		[out,retval] VARIANT * tagValue
+		);
+
+	/* 2006-3-14 batch read/write */
+	[id(6)] HRESULT readSnapshots(
+		[in] LONG count,
+		[in] VARIANT tagNames, 
+        [in, out] VARIANT * tagValues
+		);
+	[id(7)] HRESULT writeSnapshots(
+		[in] LONG count,
+		[in] VARIANT tagNames, 
+        [in] VARIANT tagValues
+		);
+	[id(8)]HRESULT readArchiveValues(
+		[in] VARIANT tagNames, 
+		[in] VARIANT startTime,
+		[in] LONG interval,
+		[in] LONG count,
+        [in, out] VARIANT * tagValues
+		);
+              
+	[id(9)]HRESULT sleep([in] LONG miliSeconds);
+
+};
+[
+	uuid(0E2A80B6-5F30-46A4-9D25-79D95AD4154E),
+	version(1.0),
+	custom(a817e7a1-43fa-11d0-9e44-00aa00b6770a,"{DBBDBA84-B3BC-4AF9-A532-D595FDB5ED22}")
+]
+library libpmcdbLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(DBBDBA84-B3BC-4AF9-A532-D595FDB5ED22)		
+	]
+	coclass CompReg
+	{
+		[default] interface IComponentRegistrar;
+	};
+	[
+		uuid(6CE09E7F-B339-47B1-9449-2CF3E94C1A65)		
+	]
+	coclass PmcDB
+	{
+		[default] interface IPmcDB;
+	};
+};
+

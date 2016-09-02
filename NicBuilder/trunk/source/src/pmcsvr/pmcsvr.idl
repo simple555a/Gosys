@@ -1,0 +1,40 @@
+// aom.idl : IDL source for aom.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (aom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "opcda.idl";
+import "pmcdb_idl.idl";
+
+[
+	uuid(7BCEC898-6F19-4F89-9B3D-AE59E3001BC6),
+	version(1.0),
+	helpstring("PMCSVR 1.0 Type Library")
+]
+library PMCSVRLIB
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(268F712B-CFC3-4D8A-96B4-706937B61668),
+		helpstring("OpcServer Class")
+	]
+	coclass OpcServer
+	{
+		[default] interface IOPCServer;
+	};
+	
+	[
+		uuid(BA7CE1FB-E5DE-4ffc-8044-BF3053955FCF),
+		helpstring("PmcDB Class")
+	]
+	coclass PmcDB{
+		[default] interface IPmcDB;
+		[default, source] dispinterface IPmcDBEvents;
+	};
+};
+

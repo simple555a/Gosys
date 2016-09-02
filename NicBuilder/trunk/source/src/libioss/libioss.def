@@ -1,0 +1,18 @@
+LIBRARY LIBIOSS
+EXPORTS
+    init_ioss
+    uninit_ioss
+    
+    io_create_device
+    io_delete_device
+    io_get_devices
+    io_load_driver
+    io_open_device
+    io_start_device
+    io_stop_device
+    io_unload_driver
+    io_update_tag
+    io_write_device
+    io_write_device_ex
+    io_probe_device
+

@@ -1,0 +1,33 @@
+HKCR
+{
+	PmcSvr.OpcServer.1 = s 'OpcServer Class'
+	{
+		CLSID = s '{268F712B-CFC3-4D8A-96B4-706937B61668}'
+	}
+	PmcSvr.OpcServer = s 'OpcServer Class'
+	{
+		CLSID = s '{268F712B-CFC3-4D8A-96B4-706937B61668}'
+		CurVer = s 'PmcSvr.OpcServer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {268F712B-CFC3-4D8A-96B4-706937B61668} = s 'OpcServer Class'
+		{
+			ProgID = s 'PmcSvr.OpcServer.1'
+			VersionIndependentProgID = s 'PmcSvr.OpcServer'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{46EABFDA-9EF3-4C87-832A-C4F0F9B2ED00}'
+			'TypeLib' = s '{7BCEC898-6F19-4F89-9B3D-AE59E3001BC6}'
+			ForceRemove 'Implemented Categories' = s ''
+			{
+				ForceRemove {63D5F430-CFE4-11D1-B2C8-0060083BA1FB} = s ''
+				{
+				}
+				ForceRemove {63D5F432-CFE4-11D1-B2C8-0060083BA1FB} = s ''
+				{
+				}
+			}
+		}
+	}
+}

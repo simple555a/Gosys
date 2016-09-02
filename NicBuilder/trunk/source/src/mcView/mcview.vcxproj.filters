@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{16fa5eab-7e40-4e38-8fc0-f52e2ff56923}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d860e18f-4b06-461d-b937-8b7b7893ebe5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c4264840-a7c5-4b84-a443-198241c76f3a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlarmRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Arc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaAlarmDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaInputA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaInputD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaPassword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaQueryAlarm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaUserEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaUserGroupEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaUserGroupNew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaUserManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiaUserNew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAbout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDnyTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectKName.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTrendComSav.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTrendTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DnyAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ellipse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="keyhook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mcview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mcviewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Meta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PolyLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundRect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenShutter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlarmListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Arc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaAlarmDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaAlarmList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaInputA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaInputD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaPassword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaQueryAlarm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaUserEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaUserGroupEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaUserGroupNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaUserManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiaUserNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAbout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDnyTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectKName.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTrendComSav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTrendTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dnyattr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ellipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyhook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mcview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mcviewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PolyLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenShutter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\H_POINT.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mcview.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mcview.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\na.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\na.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\声音关闭.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\声音打开.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="版本说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mcview.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

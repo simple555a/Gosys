@@ -1,0 +1,46 @@
+// libhisdATL.idl : IDL source for libhisdATL.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (libhisdATL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(71F0209D-AFD9-4878-942B-C20FCA682411),
+		dual,
+		helpstring("IPmcDB Interface"),
+		pointer_default(unique)
+	]
+	interface IPmcDB : IDispatch
+	{
+		[id(1), helpstring("method lock")] HRESULT lock([in]BOOL exclusive, [in]LONG timeOut);
+		[id(2), helpstring("method unlock")] HRESULT unlock();
+		[id(3), helpstring("method readSnapshot")] HRESULT readSnapshot([in]BSTR tagName, [in,out]VARIANT* tagValue);
+		[id(4), helpstring("method writeDevice")] HRESULT writeDevice([in]BSTR tagName, [in]VARIANT tagValue);
+		[id(5), helpstring("method readArchiveValue")] HRESULT readArchiveValue([in]BSTR tagName, [in]VARIANT date, [in, out]VARIANT* tagValue);
+		[id(6), helpstring("method readArchiveValuesByCount")] HRESULT readArchiveValuesByCount([in]BSTR tag, [in]VARIANT sTime, [in]VARIANT eTime, [in]int valueCount, [in, out]VARIANT* tagValue);
+		[id(7), helpstring("method writeTag")] HRESULT writeTag([in]BSTR tagName, [in]VARIANT tagValue);
+		[id(8), helpstring("method isAlarmTag")] HRESULT isAlarmTag([in]BSTR tagName, [in,out]VARIANT* alarm_sign);
+	};
+
+[
+	uuid(1316CB03-5410-4C39-9975-9C6CCAFB4DF5),
+	version(1.0),
+	helpstring("libhisdATL 1.0 Type Library")
+]
+library LIBHISDATLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(4366947A-0715-4219-920D-89C5C00E9F72),
+		helpstring("PmcDB Class")
+	]
+	coclass PmcDB
+	{
+		[default] interface IPmcDB;
+	};
+};

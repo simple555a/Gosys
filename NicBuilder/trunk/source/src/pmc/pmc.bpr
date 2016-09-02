@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="\proj\target\bin\pmc.exe"/>
+    <OBJFILES value="pmc.obj untMainForm.obj untDBLoader.obj untTagView.obj untTreeNode.obj 
+      configurable.obj untDCSItem.obj untNodeItem.obj untGroupItem.obj 
+      untSerialPortView.obj untSerialPortItem.obj untConfigurableView.obj 
+      untGroupView.obj untPictureItem.obj untDBView.obj untTagItem.obj 
+      untDCSView.obj untConfigManager.obj untMisc.obj untAboutForm.obj 
+      untSplashForm.obj untDeviceItem.obj untNodeView.obj untDeviceView.obj 
+      untSerialPortsView.obj untPictureView.obj untAddTagView.obj 
+      untAddGroupView.obj untAddDeviceView.obj untDevicesView.obj 
+      untProgressForm.obj"/>
+    <RESFILES value="pmc.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) untMainForm.dfm untTagView.dfm untSerialPortView.dfm 
+      untConfigurableView.dfm untGroupView.dfm untDBView.dfm untDCSView.dfm 
+      untAboutForm.dfm untSplashForm.dfm untNodeView.dfm untDeviceView.dfm 
+      untSerialPortsView.dfm untPictureView.dfm untAddTagView.dfm 
+      untAddGroupView.dfm untAddDeviceView.dfm untDevicesView.dfm 
+      untProgressForm.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bdertl.lib dbrtl.lib vcldb.lib dss.lib tee.lib bcbsmp.lib vclx.lib rtl.lib 
+      vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib bcbsmp.lib tee.lib dss.lib vcldb.lib dbrtl.lib 
+      bdertl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi dclocx.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="NDEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="pmc.cpp"/>
+    <INCLUDEPATH value="res;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;\proj\inc_all"/>
+    <LIBPATH value="res;&quot;c:\program files\borland\cbuilder6\include\vcl&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib;\proj\imp_all\bcb"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Ires -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I\proj\inc_all -src_suffix cpp -DNDEBUG -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a4 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="pmc.res" FORMNAME="" UNITNAME="pmc.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pmc.cpp" FORMNAME="" UNITNAME="pmc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untMainForm.cpp" FORMNAME="frmMain" UNITNAME="untMainForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDBLoader.cpp" FORMNAME="" UNITNAME="untDBLoader" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untTagView.cpp" FORMNAME="framTag" UNITNAME="untTagView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untTreeNode.cpp" FORMNAME="" UNITNAME="untTreeNode" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="configurable.cpp" FORMNAME="" UNITNAME="configurable" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDCSItem.cpp" FORMNAME="" UNITNAME="untDCSItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untNodeItem.cpp" FORMNAME="" UNITNAME="untNodeItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untGroupItem.cpp" FORMNAME="" UNITNAME="untGroupItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untSerialPortView.cpp" FORMNAME="framSerialPort" UNITNAME="untSerialPortView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untSerialPortItem.cpp" FORMNAME="" UNITNAME="untSerialPortItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untConfigurableView.cpp" FORMNAME="framConfigurable" UNITNAME="untConfigurableView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untGroupView.cpp" FORMNAME="framGroup" UNITNAME="untGroupView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untPictureItem.cpp" FORMNAME="" UNITNAME="untPictureItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDBView.cpp" FORMNAME="framDB" UNITNAME="untDBView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untTagItem.cpp" FORMNAME="" UNITNAME="untTagItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDCSView.cpp" FORMNAME="framDCSView" UNITNAME="untDCSView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untConfigManager.cpp" FORMNAME="" UNITNAME="untConfigManager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untMisc.cpp" FORMNAME="" UNITNAME="untMisc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untAboutForm.cpp" FORMNAME="AboutBox" UNITNAME="untAboutForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untSplashForm.cpp" FORMNAME="frmSplash" UNITNAME="untSplashForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDeviceItem.cpp" FORMNAME="" UNITNAME="untDeviceItem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="untNodeView.cpp" FORMNAME="framNodeView" UNITNAME="untNodeView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDeviceView.cpp" FORMNAME="framDeviceView" UNITNAME="untDeviceView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untSerialPortsView.cpp" FORMNAME="framSerialPorts" UNITNAME="untSerialPortsView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untPictureView.cpp" FORMNAME="framPictureView" UNITNAME="untPictureView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untAddTagView.cpp" FORMNAME="framAddTag" UNITNAME="untAddTagView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untAddGroupView.cpp" FORMNAME="framAddGroup" UNITNAME="untAddGroupView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untAddDeviceView.cpp" FORMNAME="framAddDevice" UNITNAME="untAddDeviceView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untDevicesView.cpp" FORMNAME="framDevices" UNITNAME="untDevicesView" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="untProgressForm.cpp" FORMNAME="frmProgress" UNITNAME="untProgressForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=1
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=北京中核东方控制系统工程有限公司
+FileDescription=实时数据库组态程序
+FileVersion=1.0.0.1
+InternalName=PMC.EXE
+LegalCopyright=CNCS
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=16
+Item0=res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;\proj\inc_all
+Item1=res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;\proj\imp_all
+Item2=res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\..\inc_all
+Item3=res;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\include;../include;../../include/private;../../include/public;../../include/win32;../../../../common/include;../../../../common/include/public;../../../../common/include/private
+Item4=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\include;../include;../../include/private;../../include/sdk;../../include/kernel;../../../../common/include;../../../../common/include/public;../../../../common/include/private
+Item5=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\include;../include;../../include/private;../../include/sdk;../../include/kernel;../../../common/include;../../../common/include/public;../../../common/include/private
+Item6=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\include;../include;../../include/private;../../include/sdk;../../include/kernel
+Item7=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\include;../include
+Item8=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\sdk\include;../include
+Item9=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\sdk\include
+Item10=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;..\..\pmc2sdk\include
+Item11=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;\pmc2\sdk\include
+Item12=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;e:\pmc2\sdk\include
+Item13=res;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;../../include
+Item14=C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl;../../include
+Item15=C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=16
+Item0=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;\proj\imp_all\bcb
+Item1=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\imp_all\bcb
+Item2=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb;..\implib\bcb
+Item3=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb;..\implib\bcb;
+Item4=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb;..\implib\bcb;..\..\..\..\common\implib;..\..\..\..\common\bin\implib
+Item5=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb;..\implib\bcb;../../../../common/implib;../../../../common/bin/implib
+Item6=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb;..\implib\bcb;../../../common/implib;../../../common/bin/implib
+Item7=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb;..\implib\bcb;../../../common/implib;../../../common/bin/implib;
+Item8=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\implib\bcb
+Item9=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\sdk\implib\bcb
+Item10=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\pmc2sdk\implib\bcb
+Item11=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;\pmc2\sdk\implib\bcb
+Item12=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;e:\pmc2\sdk\implib\bcb
+Item13=res;c:\program files\borland\cbuilder6\include\vcl;C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\lib\bcb
+Item14=C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\lib\bcb
+Item15=C:\Program Files\Borland\CBuilder6\Projects;E:\vss\pmc2\src\librtdb\dbdiag;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(BCB)\source\vcl;D:\Program Files\Borland\Delphi7\Source\Rtl\Sys\
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=NDEBUG
+Item1=NDEBUG;_DEBUG
+Item2=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=4
+Item0=\pmc2\obj\pmc
+Item1=e:\pmc2\obj\pmc
+Item2=..\..\..\obj\pmc
+Item3=..\..\..\obj\dbdiag
+
+[HistoryLists\hlFinalOutputDir]
+Count=10
+Item0=\proj\target\bin\
+Item1=\proj\target\bin
+Item2=..\..\..\..\target\bin\
+Item3=..\..\target\win32\bin\
+Item4=..\..\bin\
+Item5=\pmc2\bin\
+Item6=e:\pmc2\bin\
+Item7=e:\pmc2\bin
+Item8=..\..\..\bin\
+Item9=..\..\..\bin
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;D:\Program Files\Borland\Delphi7\Source\Rtl\Sys\
+
+[Parameters]
+RunParams=--debug
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

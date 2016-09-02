@@ -1,0 +1,811 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\mcHisQuery.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\mcHisQuery.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_OPT_QUERY
+    BUTTON      ID_OPT_SCRPRV
+    BUTTON      ID_OPT_SCRLTR
+    SEPARATOR
+    BUTTON      ID_OPT_OUTFILE
+    BUTTON      ID_OPT_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_CURVE
+    BUTTON      ID_VIEW_LIST
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "操作(&O)"
+    BEGIN
+        MENUITEM "查询(&Q)",                    ID_OPT_QUERY
+        MENUITEM "向前翻(&P)",                  ID_OPT_SCRPRV
+        MENUITEM "向后翻(L)",                   ID_OPT_SCRLTR
+        MENUITEM SEPARATOR
+        MENUITEM "输出到文件(&F)",              ID_OPT_OUTFILE
+        MENUITEM "打印(&P)",                    ID_OPT_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM SEPARATOR
+        MENUITEM "曲线(&C)",                    ID_VIEW_CURVE
+        MENUITEM "列表(&L)",                    ID_VIEW_LIST
+    END
+    POPUP "格式(&F)"
+    BEGIN
+        MENUITEM "数据(&D)",                    ID_VIEW_FORMAT
+        MENUITEM SEPARATOR
+        MENUITEM "曲线(&C)",                    ID_FORMAT_CURVE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 hisq(&A)...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 278, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 hisq"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "hisq 1.04 版",IDC_STATIC,40,13,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 北京爱信特测控技术有限公司 2001-2009",
+                    IDC_STATIC,39,34,200,8
+    DEFPUSHBUTTON   "确定",IDOK,219,7,50,14,WS_GROUP
+END
+
+IDD_QUERY DIALOG DISCARDABLE  0, 0, 485, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询历史数据"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "数据点",IDC_STATIC,7,7,321,208
+    EDITTEXT        IDC_TAG1,26,19,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG2,26,33,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG3,26,47,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG4,26,61,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG5,26,75,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG6,26,89,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG7,26,103,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG8,26,117,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG9,26,131,137,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAG10,26,145,137,13,ES_AUTOHSCROLL
+    GROUPBOX        "保存到文件/从文件载入",IDC_STATIC,15,167,306,39
+    PUSHBUTTON      "保存...",IDC_SAVE,26,183,41,14
+    PUSHBUTTON      "载入...",IDC_LOAD,77,183,41,14
+    GROUPBOX        "时间段",IDC_STATIC,335,7,98,208
+    RTEXT           "起点",IDC_STATIC,345,23,19,9,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_DATE_STA,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,347,35,
+                    78,13
+    CONTROL         "DateTimePicker2",IDC_TIME_STA,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,347,50,78,
+                    13
+    DEFPUSHBUTTON   "确定",IDOK,440,13,38,14
+    PUSHBUTTON      "取消",IDCANCEL,440,32,38,14
+    RTEXT           "1",IDC_STATIC,13,21,8,9,SS_CENTERIMAGE
+    RTEXT           "2",IDC_STATIC,13,35,8,9,SS_CENTERIMAGE
+    RTEXT           "3",IDC_STATIC,13,49,8,9,SS_CENTERIMAGE
+    RTEXT           "4",IDC_STATIC,13,63,8,9,SS_CENTERIMAGE
+    RTEXT           "5",IDC_STATIC,13,76,8,9,SS_CENTERIMAGE
+    RTEXT           "6",IDC_STATIC,13,90,8,9,SS_CENTERIMAGE
+    RTEXT           "7",IDC_STATIC,13,104,8,9,SS_CENTERIMAGE
+    RTEXT           "8",IDC_STATIC,13,118,8,9,SS_CENTERIMAGE
+    RTEXT           "9",IDC_STATIC,13,133,8,9,SS_CENTERIMAGE
+    RTEXT           "10",IDC_STATIC,13,147,8,9,SS_CENTERIMAGE
+    PUSHBUTTON      "...",IDC_SELTAG1,170,19,18,13
+    PUSHBUTTON      "...",IDC_SELTAG2,170,33,18,13
+    PUSHBUTTON      "...",IDC_SELTAG3,170,47,18,13
+    PUSHBUTTON      "...",IDC_SELTAG4,170,61,18,13
+    PUSHBUTTON      "...",IDC_SELTAG5,170,75,18,13
+    PUSHBUTTON      "...",IDC_SELTAG6,170,89,18,13
+    PUSHBUTTON      "...",IDC_SELTAG7,170,103,18,13
+    PUSHBUTTON      "...",IDC_SELTAG8,170,117,18,13
+    PUSHBUTTON      "...",IDC_SELTAG9,170,131,18,13
+    PUSHBUTTON      "...",IDC_SELTAG10,170,145,18,13
+    EDITTEXT        IDC_DIS1,196,19,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS2,196,33,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS3,196,47,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS4,196,61,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS5,196,75,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS6,196,89,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS7,196,103,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS8,196,117,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS9,196,131,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIS10,196,145,124,13,ES_AUTOHSCROLL
+    RTEXT           "终点",IDC_STATIC,346,69,19,9,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_DATE_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,348,81,
+                    78,13
+    CONTROL         "DateTimePicker2",IDC_TIME_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,348,96,78,
+                    13
+END
+
+IDD_IP DIALOGEX 0, 0, 197, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "服务器IP地址"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    RTEXT           "当前IP地址",IDC_STATIC,6,8,44,12,SS_CENTERIMAGE
+    RTEXT           "更改为",IDC_STATIC,6,26,44,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_CURIP,53,6,96,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CONTROL         "IPAddress1",IDC_SERVERIP,"SysIPAddress32",WS_TABSTOP,53,
+                    25,96,14
+    DEFPUSHBUTTON   "确定",IDOK,152,6,38,14
+    PUSHBUTTON      "取消",IDCANCEL,152,25,38,14
+END
+
+IDD_FORMAT DIALOG DISCARDABLE  0, 0, 143, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "格式"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,98,7,38,14
+    PUSHBUTTON      "取消",IDCANCEL,98,24,38,14
+    EDITTEXT        IDC_EDIT_FORMAT,7,7,86,15,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_FORMAT,7,24,85,77,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FORMAT_CURVE DIALOGEX 0, 0, 287, 247
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "曲线图格式"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "网格线",IDC_STATIC,7,7,225,54
+    CONTROL         "显示",IDC_SHOW_GRID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,21,32,12
+    RTEXT           "水平",IDC_STATIC,20,40,20,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_HOR_GRID,42,39,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "垂直",IDC_STATIC,84,40,20,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_VER_GRID,106,39,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "值范围",IDC_STATIC,7,70,225,170
+    RTEXT           "1",IDC_STATIC,19,95,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN1,40,95,40,14,ES_AUTOHSCROLL
+    RTEXT           "最小值",IDC_STATIC,42,83,27,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MAX1,89,95,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN1,"Button",BS_OWNERDRAW | WS_TABSTOP,137,95,38,
+                    14,WS_EX_CLIENTEDGE
+    RTEXT           "2",IDC_STATIC,19,111,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN2,40,109,40,14,ES_AUTOHSCROLL
+    RTEXT           "最大值",IDC_STATIC,90,83,27,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MAX2,89,109,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN2,"Button",BS_OWNERDRAW | WS_TABSTOP,137,109,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "3",IDC_STATIC,19,125,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN3,40,123,40,14,ES_AUTOHSCROLL
+    RTEXT           "线宽",IDC_STATIC,185,83,18,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MAX3,89,123,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN3,"Button",BS_OWNERDRAW | WS_TABSTOP,137,123,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "4",IDC_STATIC,19,139,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN4,40,137,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX4,89,137,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN4,"Button",BS_OWNERDRAW | WS_TABSTOP,137,137,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "5",IDC_STATIC,19,153,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN5,40,151,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX5,89,151,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN5,"Button",BS_OWNERDRAW | WS_TABSTOP,137,151,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "6",IDC_STATIC,19,167,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN6,40,165,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX6,89,165,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN6,"Button",BS_OWNERDRAW | WS_TABSTOP,137,165,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "7",IDC_STATIC,19,181,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN7,40,179,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX7,89,179,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN7,"Button",BS_OWNERDRAW | WS_TABSTOP,137,179,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "8",IDC_STATIC,19,195,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN8,40,193,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX8,89,193,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN8,"Button",BS_OWNERDRAW | WS_TABSTOP,137,193,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "9",IDC_STATIC,19,209,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN9,40,207,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX9,89,207,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN9,"Button",BS_OWNERDRAW | WS_TABSTOP,137,207,
+                    38,14,WS_EX_CLIENTEDGE
+    RTEXT           "10",IDC_STATIC,19,223,13,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN10,40,221,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX10,89,221,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PEN10,"Button",BS_OWNERDRAW | WS_TABSTOP,137,221,
+                    38,14,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "确定",IDOK,242,12,38,14
+    PUSHBUTTON      "取消",IDCANCEL,242,29,38,14
+    COMBOBOX        IDC_VER_WT1,183,95,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT2,183,109,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT3,183,123,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT4,183,137,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT5,183,151,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT6,183,165,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT7,183,179,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT8,183,193,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT9,183,207,34,280,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VER_WT10,183,221,34,280,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PRTCOUNT DIALOG DISCARDABLE  0, 0, 114, 53
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输出记录数量"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,15,29,38,14
+    PUSHBUTTON      "取消",IDCANCEL,58,29,38,14
+    EDITTEXT        IDC_COUNT,15,7,51,14,ES_AUTOHSCROLL
+    LTEXT           "条记录",IDC_STATIC,73,7,35,14,SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 3,5,814,6
+ PRODUCTVERSION 3,5,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Actech\0"
+            VALUE "FileDescription", "PMC File\0"
+            VALUE "FileVersion", "3.5.814.6\0"
+            VALUE "InternalName", "hisq\0"
+            VALUE "LegalCopyright", "Actech\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "hisq\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PC-Based Monitoring And Controlling System\0"
+            VALUE "ProductVersion", "3.5.814.0\0"
+            VALUE "SpecialBuild", "\0"
+            VALUE "作者", "sOycola@SMTH\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 478
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_IP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_FORMAT_CURVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_PRTCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FORMAT_CURVE DLGINIT
+BEGIN
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0032, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0033, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0034, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0035, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0036, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0037, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0038, 
+    IDC_HOR_GRID, 0x403, 2, 0
+0x0039, 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_HOR_GRID, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0032, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0033, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0034, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0035, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0036, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0037, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0038, 
+    IDC_VER_GRID, 0x403, 2, 0
+0x0039, 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_VER_GRID, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_VER_WT1, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT1, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT1, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT1, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT2, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT2, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT2, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT2, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT3, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT3, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT3, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT3, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT4, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT4, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT4, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT4, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT5, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT5, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT5, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT5, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT6, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT6, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT6, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT6, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT7, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT7, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT7, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT7, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT8, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT8, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT8, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT8, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT9, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT9, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT9, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT9, 0x403, 2, 0
+0x0033, 
+    IDC_VER_WT10, 0x403, 2, 0
+0x0030, 
+    IDC_VER_WT10, 0x403, 2, 0
+0x0031, 
+    IDC_VER_WT10, 0x403, 2, 0
+0x0032, 
+    IDC_VER_WT10, 0x403, 2, 0
+0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "hisq"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "hisq"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_CURVE           "显示曲线\\N显示曲线"
+    ID_OPT_QUERY            "查询\n查询"
+    ID_OPT_PRINT            "打印\n打印"
+    ID_MENUITEM32775        "设置服务器IP地址\n设置服务器IP地址"
+    ID_VIEW_FORMAT          "格式\n格式"
+    ID_FORMAT_CURVE         "曲线图格式\n曲线图格式"
+    ID_OPT_OUTFILE          "输出到文件\n输出到文件"
+    ID_OPT_SCRPRV           "向前翻\n向前翻"
+    ID_OPT_SRCLTR           "向后翻\n向后翻"
+    ID_OPT_SCRLTR           "向后翻\n向后翻"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_LIST            "显示列表\n显示列表"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\mcHisQuery.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

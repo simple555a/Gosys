@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1c1cd047-6406-4cc7-a853-d13d38a28f30}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1f3a0493-6990-45f3-8146-e1b6fffa2cdf}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ac6aec12-6c2d-4fe0-baca-e0e242af5b66}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgHotkey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="keyc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="keycDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="keyc.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgHotkey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keycDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\keyc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\keyc.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

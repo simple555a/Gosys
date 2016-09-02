@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{46EABFDA-9EF3-4C87-832A-C4F0F9B2ED00} = s 'pmcsvr'
+		'pmcsvr.exe'
+		{
+			val AppID = s {46EABFDA-9EF3-4C87-832A-C4F0F9B2ED00}
+		}
+	}
+}
