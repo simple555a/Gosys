@@ -1,0 +1,6 @@
+LIBRARY	"libCPmm"
+EXPORTS
+    mm_create_heap
+    mm_destroy_heap
+    mm_alloc
+    mm_free

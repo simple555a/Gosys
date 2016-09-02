@@ -1,0 +1,16 @@
+LIBRARY	"libkadapter"
+EXPORTS
+	IFileAdapter_create
+	IFileAdapter_destroy
+	IFileAdapter_global_create
+	get_IFileAdapter_vtable
+		
+	ITcpAdapter_create
+	ITcpAdapter_destroy
+	ITcpAdapter_global_create
+	get_ITcpAdapter_vtable
+
+	IKAdapter_begin_transfer
+	IKAdapter_end_transfer
+	IKAdapter_pause_transfer
+	IKAdapter_resume_transfer

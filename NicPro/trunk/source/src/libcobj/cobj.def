@@ -1,0 +1,65 @@
+LIBRARY	"libcobj"
+
+EXPORTS
+	__malloc__
+	__free__
+	
+	IF8Stream_global_create
+	IF8Stream_create
+	IF8Stream_destroy
+	get_IF8Stream_vtable
+	
+	IStreamable_global_create
+	IStreamable_create
+	IStreamable_destroy
+	get_IStreamable_vtable
+	
+	IMemStream_global_create
+	IMemStream_create
+	IMemStream_destroy
+	IMemStream_bind
+	IMemStream_load_file
+	IMemStream_insert_file
+	get_IMemStream_vtable
+	
+	IFileStream_global_create
+	IFileStream_create
+	IFileStream_destroy
+	get_IFileStream_vtable	
+	IFileStream_from_file
+	
+	ITempStream_global_create
+	ITempStream_create
+	ITempStream_destroy
+	get_ITempStream_vtable	
+
+	ITcpStream_global_create
+	ITcpStream_create
+	ITcpStream_destroy
+	get_ITcpStream_vtable
+	ITcpStream_build
+
+	ITreeNode_create
+	ITreeNode_destroy
+	ITreeNode_global_create
+	ITreeNode_mount
+	ITreeNode_umount
+	ITreeNode_umount_children
+	ITreeNode_traverse
+	ITreeNode_next
+	ITreeNode_previous
+	ITreeNode_get_child	
+	get_ITreeNode_vtable
+	
+	bstr_from_stream
+	bstr_from_memstream
+	bstr_to_stream
+	c_alloc_str
+	c_free_str
+	c_strdup
+
+
+	create_temp_stream
+	delete_temp_stream
+	create_mem_stream
+	delete_mem_stream

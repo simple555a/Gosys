@@ -1,0 +1,213 @@
+object framDdo161: TframDdo161
+  Left = 0
+  Top = 0
+  Width = 431
+  Height = 51
+  TabOrder = 0
+  object Panel1: TPanel
+    Left = 2
+    Top = 4
+    Width = 426
+    Height = 41
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 7
+      Top = 26
+      Width = 96
+      Height = 13
+      Caption = 'Slot 0 : F8-DDO-161'
+    end
+    object led0: TPanel
+      Left = 7
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 31
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 1
+    end
+    object Panel3: TPanel
+      Left = 55
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 2
+    end
+    object Panel4: TPanel
+      Left = 79
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 3
+    end
+    object Panel5: TPanel
+      Left = 103
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 4
+    end
+    object Panel6: TPanel
+      Left = 127
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 5
+    end
+    object Panel7: TPanel
+      Left = 151
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 6
+    end
+    object Panel8: TPanel
+      Left = 175
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 7
+    end
+    object Panel9: TPanel
+      Left = 229
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 8
+    end
+    object Panel10: TPanel
+      Left = 253
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 9
+    end
+    object Panel11: TPanel
+      Left = 277
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 10
+    end
+    object Panel12: TPanel
+      Left = 301
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 11
+    end
+    object Panel13: TPanel
+      Left = 325
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 12
+    end
+    object Panel14: TPanel
+      Left = 349
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 13
+    end
+    object Panel15: TPanel
+      Left = 373
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 14
+    end
+    object Panel16: TPanel
+      Left = 397
+      Top = 5
+      Width = 19
+      Height = 17
+      Hint = 'Run'
+      BevelOuter = bvNone
+      Color = clLime
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 15
+    end
+  end
+end

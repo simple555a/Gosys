@@ -1,0 +1,5 @@
+LIBRARY	"libfbd"
+
+EXPORTS
+	ICBlk_create
+	get_ICBlk_vtable

@@ -1,9 +1,0 @@
-[library]
-catagory=COMM
-0=RGBOOL,BB,rgbool.blk,14b2-dca9-e4ea-7fd2,1873
-1=RGFLOAT,BB,rgfloat.blk,33df-6ca0-cf0f-ec4a,597
-2=RGINT,BB,rgint.blk,7b02-54e8-fb3b-1cb0,597
-3=WGBOOL,BB,wgbool.blk,ce62-1686-609a-6df2,1935
-4=WGFLOAT,BB,wgfloat.blk,a46d-bb3d-c18b-b304,1151
-5=WGINT,BB,wgint.blk,3024-d597-84e9-f479,1111
-count=6

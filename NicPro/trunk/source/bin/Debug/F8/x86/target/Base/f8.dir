@@ -1,7 +1,0 @@
-[library]
-catagory=Base
-0=CPUFLAG,BB,cpuflag.blk,9a17-ab40-fbcd-1e05,527
-1=CPUSTATE,BB,cpustate.blk,551d-ced0-91ba-de54,1346
-2=MODSTATE,BB,modstate.blk,b8ec-e1cf-3606-b508,697
-3=SYSSTATE,BB,sysstate.blk,d7cc-1db9-c362-4453,460
-count=4

@@ -1,0 +1,26 @@
+LIBRARY	"libkproxy"
+
+EXPORTS
+	enum_variables
+	get_var_count
+	get_var_id
+	kproxy_copy
+	kproxy_delete_paste
+	kproxy_get_adapter
+	kproxy_get_clipboard_format
+	kproxy_get_kernel
+	kproxy_get_pasted_object
+	kproxy_init
+	kproxy_paste
+	kproxy_shell
+	kproxy_shell_ex
+	kproxy_shell_v
+	kproxy_uninit
+	proxy_adapter
+	proxy_silent
+	query_var
+	query_var_by_addr
+	query_var_by_fullname
+	query_var_by_id
+	query_var_by_pin
+	query_var_list

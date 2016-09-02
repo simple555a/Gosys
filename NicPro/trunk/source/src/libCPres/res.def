@@ -1,0 +1,24 @@
+LIBRARY "libCPres"
+EXPORTS
+	create_resource
+	load_resource
+	unload_resource
+	load_res_stream
+	save_res_stream
+	set_res_buf_v
+	set_res_buf
+	set_res_name
+	get_res_name
+	get_res_buf_v
+	get_res_buf
+	del_res_item
+	get_res_int
+	get_res_int_v
+	set_res_int
+	set_res_int_v
+	create_f8_uuid
+	f8_uuid_to_string
+	f8_uuid_from_string
+	enum_res_items
+	enum_resources
+	reset_resources
