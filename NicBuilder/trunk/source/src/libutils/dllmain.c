@@ -55,13 +55,6 @@ BOOL WINAPI DllMain(
 		 
 		  init_lib();
 		  
-		  g_hModule = hinstDLL;
-		  cmd=GetCommandLine();
-		  if(strstr(cmd," --withconsole") || strstr(cmd, " --debug") ){
-			   setup_console_for_log();
-			   g_bNeedConsole=TRUE;
-		  }
-		  
 		  break;
 	 }
 	 return 1;

@@ -1,0 +1,7 @@
+[oem]
+vendor=OMRON公司
+devices=C200HA
+
+[C200HA]
+module=libc200ha_device
+description=C200Hα系列PLC

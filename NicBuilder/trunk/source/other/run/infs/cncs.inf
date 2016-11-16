@@ -1,0 +1,23 @@
+[oem]
+vendor=北京中核东方控制系统工程有限公司
+devices=calc,echo,f8,DPU
+
+[calc]
+description=数值计算设备
+module=libdevcalc
+version=2.0.0.3
+
+[echo]
+module=libdevecho
+description=回写设备
+version=2.0.0.3
+
+[f8]
+module=libdevcp
+description=NicSys 1000控制器
+version=1.0.0.1
+
+[DPU]
+module=libdevdpu
+description=NicSys 2000控制器
+version=1.0.0.1

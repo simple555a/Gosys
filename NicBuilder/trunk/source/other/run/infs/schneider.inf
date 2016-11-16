@@ -1,0 +1,13 @@
+[oem]
+vendor=Schneider¹«Ë¾
+devices=modbus_plus,modbus_tcp
+
+[modbus_plus]
+description=Quantum-TSX
+module=libmodbusplus
+version=2.0.0.3
+
+[modbus_tcp]
+description=modbus tcp
+module=libmodbustcp
+version=2.0.0.3
