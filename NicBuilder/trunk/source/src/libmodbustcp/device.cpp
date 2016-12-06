@@ -382,7 +382,7 @@ static __bool translatePmc10Address(
 		if(argAll.argc > 1 && tp != dt_bool){
 			//got ax+b
 			parse_arg_ex(argAll.argv[1],&argAb,"/");
-			if(argAb.argc > 2){
+			if(argAb.argc >= 2){
 				switch(tp){
 				case dt_real4:
 					addr->fa.flt=(__r4)atof(argAb.argv[0]);

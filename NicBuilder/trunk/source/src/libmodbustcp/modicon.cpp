@@ -43,6 +43,7 @@ modicon::modicon()
 	sss(c);
 	sss(valid_flags);
 	vf = 0;
+	rheap = 0;
 	ok =false;
 	sss(connections);
 	curr_connection = &connections[1];
@@ -53,6 +54,7 @@ modicon::modicon()
 	m_MaxFails = DEFAULT_MAX_FAILS;
 	failCount = 0;
 	debug = false;
+
 	int i;
 	for(i=0; i<2; i++){
 		connections[i].e = CreateEvent(NULL, TRUE, FALSE, NULL);
@@ -146,21 +148,25 @@ int generateReadPacket(
 	
 	switch(region){
 	case 0:	
+		//µØÖ· 0x0000H£¬ÃüÁîÂë 01
 		// read coil status
 		pkt[7] = 1;
 		break;
 		
 	case 1:	
+		//µØÖ· 1x0000H£¬ÃüÁîÂë 02
 		// read input status
 		pkt[7] = 2;
 		break;
 		
 	case 2:
+		//µØÖ· 3x0000H£¬ÃüÁîÂë 04
 		// read input registers
 		pkt[7] = 4;
 		break;
 		
 	case 3:	
+		//µØÖ· 4x0000H£¬ÃüÁîÂë 04
 		// read holding registers
 		pkt[7] = 3;
 		break;
